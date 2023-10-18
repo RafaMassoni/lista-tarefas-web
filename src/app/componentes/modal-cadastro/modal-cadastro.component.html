@@ -1,0 +1,19 @@
+<div class="modal">
+  <h2>Tarefa</h2>
+  <form (ngSubmit)="gravar()">
+    <!-- Campos de edição -->
+    <label>Descrição</label>
+    <input [(ngModel)]="tarefa.descricao" name="descricao"/>
+
+    <br/>
+    <label>Status</label>
+    <input [(ngModel)]="tarefa.concluido" name="concluido" type="checkbox"/>
+    <!-- Botões para salvar ou cancelar -->
+    <div style="display: flex; justify-content: flex-end; gap: 12px">
+      <button (click)="fechar()">Cancelar</button>
+      <button type="submit">Salvar</button>
+    </div>
+  </form>
+</div>
+
+
